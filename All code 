@@ -1,0 +1,202 @@
+contacts = {
+    'Student Accounts': (['billing', 'hold on my account', 'account is disabled', 'tuition', 'resumption of studies', 'facturacion', 'espera en mi cuenta', 'cuenta deshabilitada', 'matricula', 'reanudacion de estudios'], '877-672-1830 (Option 3)'),
+    'Financial Aid': (['financial aid', 'scholarship', 'refund', 'ayuda financiera', 'beca', 'reembolso'], '872-672-1830 (Option 1)'),
+    'Housing (Pleasantville)': (['housing', 'dorm', 'pleasantville', 'alumni hall', 'martin hall', 'north hall', 'elm hall', 'townhouse', 'vivienda', 'dormitorio', 'Pleasantville', 'sala de exalumnos', 'sala Martin', 'sala norte', 'sala elm', 'townhouse'], '914-989-8146'),
+    'Housing (New York City)': (['housing', 'dorm', 'one pace plaza', 'new york city', '15 beekman', '33 beekman', '182 broadway', '55 john street', "maria's tower", 'vivienda', 'dormitorio', 'one pace plaza', 'nueva york', '15 beekman', '33 beekman', '182 broadway', '55 john street', "torre de maria"], '212-346-1296'),
+    'Alumni Services': (['alumni', 'alumni volunteer', 'exalumnos'], '877-825-8664'),
+    'Auxiliary Services': (['dining', 'meal plan', 'comedor', 'Regimen de comidas'], '877-722-3431'),
+    'One Card': (['id', 'card', 'id', 'tarjeta'], '888-914-7223'),
+    'Human Resources': (['employee', 'work', 'job', 'pay', 'empleado', 'trabajo', 'pago'], '914-923-2370'),
+    'Help Desk': (['password reset', 'duo', 'shared drive', 'email', 'bypass code', 'account is locked', 'vpn', 'cisco any connect', 'remote desktop', 'activation code', 'qr code', 'Pace laptop','restablecimiento de contrasena', 'duo', 'unidades compartidas', 'correo electronico', 'codigo de bypass', 'cuenta bloqueada', 'vpn', 'cisco any connect', 'escritorio remoto', 'código de activacion', 'codigo QR', 'laptop Pace'], '855-722-3487'),
+    'Admissions (Undergrad)': (['incoming student', 'application status', 'resumption of studies', 'undergrad', 'estudiante entrante', 'estado de la aplicacion', 'resumption of studies'], '212) 346-1323'),
+    'Admissions (Graduate)': (['incoming student', 'application status', 'resumption of studies', 'graduate student', 'graduated', 'estudiante entrante', 'estado de la aplicacion', 'resumption of studies'], '(212) 346-1531')
+}
+responses = {
+    'english': {
+        'greeting': "Hey, I'm Kogane! My role is to guide students and faculty at Pace University, ensuring they receive the assistance they need. How can I assist you today?",
+        'issue': "Your issue:",
+        'instructions': "To resolve your issue, please contact {contact_name} at the following number: {phone_number}. If you are out of the country and encounter any difficulties reaching this phone number, you may submit a ticket for your issue at helpdesk.pace.edu. Hope this helps!",
+        'not_found': "Sorry, but I couldn't find any contact information to help you solve your problem. Please call our Help Desk at 855-722-3487 in order to better assist you. You may also submit a ticket for this issue via our ticket system at helpdesk.pace.edu. Additionally, feel free to explore our client portal to search for any articles that you feel will be of assistance to you.",
+        'farewell?': "Thank you! Is there anything else I can assist you with today?",
+        'more_assistance': "What else can I help you with today?",
+        'farewell_no_more_questions':'Okay! Have a wonderful day!',
+        'ask_for_ticket_instructions': "Would you like instructions on how to submit a ticket? (yes/si or no)",
+        'ticket_instructions': "\nStep 1:\nGo to Helpdesk.pace.edu and click 'Sign in'. Log in with your Pace credentials.\n\nStep 2:\nYou have two options to submit a ticket:\n- Option 1: Click the 'Submit a ticket' box on the right-hand side of the screen, below the search bar.\n- Option 2: Scroll down to 'Find Services and Submit a Ticket Below'. This section provides a list of departments/services for ticket submission.\n",
+        'rate_service_prompt': "Would you like to rate the service you received today? (yes/no): ",
+        'rate_service': "Please rate the service you received from 1 out of 5 stars: ",
+        'rate_thank_you': "Thank you for your rating of {rating} stars. Your feedback is appreciated!"
+    },
+    'spanish': {
+        'greeting': "¡Hola, soy Kogane! Mi funcion es guiar a los estudiantes y profesores de la Universidad Pace, asegurando que reciban la ayuda que necesitan. ¿Como puedo ayudarte hoy?",
+        'issue': "Tu problema:",
+        'instructions': "Para resolver tu problema, por favor contacta a {contact_name} al siguiente numero: {phone_number}. Si estas fuera del pais y encuentras dificultades para comunicarte con este numero, puedes enviar un ticket para tu problema en helpdesk.pace.edu. ¡Espero que esto te ayude!",
+        'not_found': "Lo siento, no pude encontrar información de contacto para ayudarte a resolver tu problema. Por favor llama a nuestro Help Desk al 855-722-3487 para obtener una mejor asistencia. Tambien puedes enviar un ticket para este problema a traves de nuestro sistema de tickets en helpdesk.pace.edu. Además, sientete libre de explorar nuestro portal de clientes para buscar articulos que puedan ser de ayuda.",
+        'farewell?': "¡Gracias! ¿Hay algo más en lo que pueda ayudarte hoy?",
+        'more_assistance': "¿En qué más puedo ayudarte hoy?",
+        'farewell_no_more_questions': "¡De acuerdo! ¡Ten un día maravilloso!",
+        'ask_for_ticket_instructions': "¿Desea instrucciones sobre cómo enviar un ticket? (yes/si or no)",
+        'ticket_instructions': "Paso 1: Vaya a Helpdesk.pace.edu, haga clic en 'Iniciar sesión' e inicie sesión con sus credenciales de Pace. Paso 2: Tiene dos opciones para enviar un ticket. Opción 1: Haga clic en la casilla 'Enviar un ticket' en la en el lado derecho de la pantalla, debajo de la barra de búsqueda. Opción 2: Desplácese hacia abajo hasta 'Buscar servicios y enviar un ticket a continuación. Esta sección proporciona una lista de departamentos/servicios para el envío de tickets.",
+        'rate_service_prompt': "¿Te gustaría calificar el servicio que recibiste hoy? (sí/no): ",
+        'rate_service': "Por favor, califica el servicio que recibiste de 1 con hasta 5 estrellas: ",
+        'rate_thank_you': "Gracias por tu calificación de {rating} estrellas. ¡Apreciamos tus comentarios!"
+    },
+    'ingles': {
+        'greeting': "Hey, I'm Kogane! My role is to guide students and faculty at Pace University, ensuring they receive the assistance they need. How can I assist you today?",
+        'issue': "Your issue:",
+        'instructions': "To resolve your issue, please contact {contact_name} at the following number: {phone_number}. If you are out of the country and encounter any difficulties reaching this phone number, you may submit a ticket for your issue at helpdesk.pace.edu. Hope this helps!",
+        'not_found': "Sorry, but I couldn't find any contact information to help you solve your problem. Please call our Help Desk at 855-722-3487 in order to better assist you. You may also submit a ticket for this issue via our ticket system at helpdesk.pace.edu. Additionally, feel free to explore our client portal to search for any articles that you feel will be of assistance to you.",
+        'farewell?': "Thank you! Is there anything else I can assist you with today?",
+        'more_assistance': "What else can I help you with today?",
+        'farewell_no_more_questions':'Okay! Have a wonderful day!',
+        'ask_for_ticket_instructions': "Would you like instructions on how to submit a ticket? (yes/si or no)",
+        'ticket_instructions': "\nStep 1:\nGo to Helpdesk.pace.edu and click 'Sign in'. Log in with your Pace credentials.\n\nStep 2:\nYou have two options to submit a ticket:\n- Option 1: Click the 'Submit a ticket' box on the right-hand side of the screen, below the search bar.\n- Option 2: Scroll down to 'Find Services and Submit a Ticket Below'. This section provides a list of departments/services for ticket submission.\n",
+        'rate_service_prompt': "Would you like to rate the service you received today? (yes/no): ",
+        'rate_service': "Please rate the service you received from 1 out of 5 stars: ",
+        'rate_thank_you': "Thank you for your rating of {rating} stars. Your feedback is appreciated!"
+    },
+    'espanol': {
+        'greeting': "¡Hola, soy Kogane! Mi funcion es guiar a los estudiantes y profesores de la Universidad Pace, asegurando que reciban la ayuda que necesitan. ¿Como puedo ayudarte hoy?",
+        'issue': "Tu problema:",
+        'instructions': "Para resolver tu problema, por favor contacta a {contact_name} al siguiente numero: {phone_number}. Si estas fuera del pais y encuentras dificultades para comunicarte con este numero, puedes enviar un ticket para tu problema en helpdesk.pace.edu. ¡Espero que esto te ayude!",
+        'not_found': "Lo siento, no pude encontrar información de contacto para ayudarte a resolver tu problema. Por favor llama a nuestro Help Desk al 855-722-3487 para obtener una mejor asistencia. Tambien puedes enviar un ticket para este problema a traves de nuestro sistema de tickets en helpdesk.pace.edu. Además, sientete libre de explorar nuestro portal de clientes para buscar articulos que puedan ser de ayuda.",
+        'farewell?': "¡Gracias! ¿Hay algo más en lo que pueda ayudarte hoy?",
+        'more_assistance': "¿En qué más puedo ayudarte hoy?",
+        'farewell_no_more_questions': "¡De acuerdo! ¡Ten un día maravilloso!",
+        'ask_for_ticket_instructions': "¿Desea instrucciones sobre cómo enviar un ticket? (yes/si or no)",
+        'ticket_instructions': "\nPaso 1:\nVaya a Helpdesk.pace.edu, haga clic en 'Iniciar sesión' e inicie sesión con sus credenciales de Pace.\n\nPaso 2:\nTiene dos opciones para enviar un ticket:\n- Opción 1: Haga clic en la casilla 'Enviar un ticket' en el lado derecho de la pantalla, debajo de la barra de búsqueda.\n- Opción 2: Desplácese hacia abajo hasta 'Buscar servicios y enviar un ticket a continuación.' Esta sección proporciona una lista de departamentos/servicios para el envío de tickets.\n",
+        'rate_service_prompt': "¿Te gustaría calificar el servicio que recibiste hoy? (sí/no): ",
+        'rate_service': "Por favor, califica el servicio que recibiste de 1 con hasta 5 estrellas: ",
+        'rate_thank_you': "Gracias por tu calificación de {rating} estrellas. ¡Apreciamos tus comentarios!"
+    },
+}
+user_ratings = []
+high_ratings = 0  
+
+def get_user_language():
+    while True:
+        language = input("Please enter your preferred language (English/Spanish): Por favor ingresa tu idioma preferido (Inglés/Español): ").lower()
+        if language in ['english', 'spanish', 'ingles', 'espanol']:
+            return language
+        print("Invalid input. Please enter 'English', 'Spanish', 'Ingles', or 'Espanol'.")
+
+def translate_text(text_key, language):
+    return responses[language].get(text_key, f"Translation not available for key: {text_key}")
+
+def get_contact_for_problem(problem):
+    for contact, (keywords, phone_number) in contacts.items():
+        if any(keyword in problem.lower() for keyword in keywords):
+            phone_number = phone_number.split(' ')[0]
+            return (contact, phone_number)
+    return None
+
+def print_formatted_message(message):
+    print("\n" + message + "\n")
+
+def get_user_feedback(language):
+    global high_ratings  
+    while True:
+        try:
+            rating_prompt = translate_text('rate_service', language)
+            rating = float(input(rating_prompt))
+            if 0 <= rating <= 5:
+                user_ratings.append(rating) 
+                if rating >= 4:
+                    high_ratings += 1  
+                return rating
+            else:
+                print("Invalid input. Please enter a number between 0 and 5.")
+        except ValueError:
+            print("Invalid input. Please enter a numeric value.")
+
+def calculate_average_rating():
+    if user_ratings:
+        return sum(user_ratings) / len(user_ratings)
+    else:
+        return 0 
+
+def calculate_high_rating_percentage():
+    if user_ratings:
+        return (high_ratings / len(user_ratings)) * 100
+    else:
+        return 0
+
+def ask_for_rating(language):
+    while True:
+        rate_service_prompt = translate_text('rate_service_prompt', language)
+        response = input(rate_service_prompt).lower()
+
+        if language in ['english', 'ingles']:
+            if response == 'yes':
+                return True
+            elif response == 'no':
+                return False
+            else:
+                print("\nPlease enter 'yes' or 'no'.")
+
+        elif language in ['spanish', 'espanol']:
+            if response in ['sí', 'si']:  
+                return True
+            elif response == 'no':
+                return False
+            else:
+                print("\nPor favor, ingresa 'sí' o 'no'.")
+
+def main():
+    user_language = get_user_language()
+
+    first_input = True
+
+    while True:
+        if first_input:
+            translated_greeting = translate_text('greeting', user_language)
+            print_formatted_message(translated_greeting)
+            issue_prompt = translate_text('issue', user_language)
+            problem = input(issue_prompt)
+            first_input = False
+        else:
+            translated_more_assistance = translate_text('more_assistance', user_language)
+            print_formatted_message(translated_more_assistance)
+            issue_prompt = translate_text('issue', user_language)
+            problem = input(issue_prompt)
+
+        contact_info = get_contact_for_problem(problem)
+
+        if contact_info is not None:
+            contact_name, phone_number = contact_info
+            translated_instructions = translate_text('instructions', user_language).format(contact_name=contact_name, phone_number=phone_number)
+            print_formatted_message(translated_instructions)
+
+            ask_ticket_help = translate_text('ask_for_ticket_instructions', user_language)
+            need_ticket_help = input(ask_ticket_help + " ").lower()
+            if need_ticket_help in ['si', 'yes']:
+                ticket_instructions = translate_text('ticket_instructions', user_language)
+                print_formatted_message(ticket_instructions)
+
+        else:
+            translated_not_found = translate_text('not_found', user_language)
+            print_formatted_message(translated_not_found)
+
+        request_for_more_help = input(translate_text('farewell?', user_language) + " (yes/si or no): ").lower()
+
+        if request_for_more_help in ['si', 'yes']:
+            continue 
+        elif request_for_more_help == 'no':
+            translated_farewell_no_more_questions = translate_text('farewell_no_more_questions', user_language)
+            print_formatted_message(translated_farewell_no_more_questions)
+
+            if ask_for_rating(user_language):
+                user_rating = get_user_feedback(user_language)
+                thank_you_message = translate_text('rate_thank_you', user_language).format(rating=user_rating)
+                print(thank_you_message)
+                #I know the average rating doesn't matter/work with this since theres only 1 user, but if you were to implement this on an actaul site then it could actually be useful.
+                average_rating = calculate_average_rating()
+                high_rating_percentage = calculate_high_rating_percentage()
+                print(f"The average user rating is: {average_rating:.2f} stars.")
+                print(f"Percentage of high ratings (4 or 5 stars): {high_rating_percentage:.2f}%")
+
+            break
+        else:
+            print("Por favor, ingresa 'si' o 'no'.")
+
+if __name__ == "__main__":
+    main()
